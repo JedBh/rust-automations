@@ -7,7 +7,6 @@ use headless_chrome::protocol::cdp::Page;
 use headless_chrome::{Browser, LaunchOptionsBuilder};
 use std::env;
 use std::fs;
-use std::io::{self, Read};
 use std::{
     collections::HashSet,
     error::Error,
@@ -90,14 +89,10 @@ fn main() -> Result<(), Box<dyn Error>> {
     let downloaded = wait_for_new_download(&cwd, &before, Duration::from_secs(60))?;
     println!("Downloaded file: {}", downloaded.display());
 
-    println!("Chrome is open. Press ENTER to close...");
-    let _ = io::stdin().read(&mut [0u8])?;
-
     Ok(())
 }
 
 fn enable_downloads_to_dir(tab: &Tab, dir: &Path) -> Result<(), Box<dyn Error>> {
-    // Chrome wants an absolute path for downloads
     let abs = dir.canonicalize()?;
 
     tab.call_method(Page::SetDownloadBehavior {
@@ -131,12 +126,10 @@ fn wait_for_new_download(
             let entry = entry?;
             let name = entry.file_name().to_string_lossy().to_string();
 
-            // ignore files that were already there
             if before.contains(&name) {
                 continue;
             }
 
-            // ignore partial Chrome downloads
             if name.ends_with(".crdownload") {
                 continue;
             }
