@@ -4,8 +4,8 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #103886 [M #100973] Heavenly feast global ( Vip Bus )-Heavenly feast , Bus 5;Heavenly Feast Gobal... (Gigi);25.01.2026;04.02.2026;Rodney Gilah;98 (B0);Reservation;Open
 #103500 [M #100973] Heavenly feast global ( Vip Bus )-Heavenly feast global , Bus 4;Heavenly Feast Gobal... (Gigi);25.01.2026;04.02.2026;Rodney Gilah;98 (B0);Reservation;Open
 #100973 [M] Heavenly feast global ( Vip Bus );Heavenly Feast Gobal... (Gigi);25.01.2026;04.02.2026;Rodney Gilah;250 (B0);Reservation;Open
-#102817 ID 1581108 - GRP ISRAEL E JORDANIA;Diversa Turismo;25.01.2026;02.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #102812 ID 1581108 - GRP ISRAEL E JORDANIA;Diversa Turismo;25.01.2026;02.02.2026;Rudy Glazer;40 (B0);Quotation;Open
+#102817 ID 1581108 - GRP ISRAEL E JORDANIA;Diversa Turismo;25.01.2026;02.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #102827 ( OK - IC - # ) VEDA VIAGENS;VEDA VIAGENS E TURIS...;25.01.2026;01.02.2026;Anna Scol Suchecki;12 (B12);Reservation;Open
 #100956 DMSF Group;NWTC;26.01.2026;07.02.2026;Eli Shalom;24 (B24);Reservation;Open
 #100953 Heavenly feast global;Heavenly Feast Gobal... (Gigi);26.01.2026;04.02.2026;Yael Zaoui;98 (B0);Quotation;Open
@@ -43,8 +43,8 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #100859 Grupo economico;Gurion Tur;01.02.2026;06.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #100860 Grupo economico Egito Israel;Gurion Tur;01.02.2026;10.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #100372 Sunday TW Feb 2026 JIL12D-EY-260127 base rate;Sunday Tours;01.02.2026;06.02.2026;Chin-Won Lee;0 (B0);Quotation;Open
-#103417 Caravana;Patricia Vianna;02.02.2026;09.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #103418 Caravana;Patricia Vianna;02.02.2026;09.02.2026;Rudy Glazer;40 (B0);Quotation;Open
+#103417 Caravana;Patricia Vianna;02.02.2026;09.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #102177 Catholic Tour;Independent;02.02.2026;09.02.2026;Virginia Syvan;30 (B0);Quotation;Open
 #98895 First Baptist Church / Shalom Ministries;Educational Opportun...;02.02.2026;12.02.2026;Ileen Sous;50 (B0);Canceled;Open
 #98894 Good News / Shalom Ministries;Educational Opportun...;02.02.2026;12.02.2026;Ileen Sous;28 (B28);Reservation;Open
@@ -89,8 +89,8 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #99951 Discover Bible Lands 2026;International Herita... (Etty Orenstein);08.02.2026;21.02.2026;Dan Herman;0 (B0);Quotation;Open
 #100506 FAMTOUR PASTORES ALLEGRA TURISMO;ALLEGRA TURISMO E IN...;08.02.2026;14.02.2026;Jonas Blatt;40 (B0);Quotation;Open
 #101341 FRT - ID 173 - Cotação Grupo - Gisele Copy Copy;FRT;08.02.2026;15.02.2026;Jonas Blatt;40 (B0);Quotation;Open
-#101377 GRUPO ADRIANA;Via Brasil;08.02.2026;15.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #99266 GRUPO ADRIANA;Via Brasil;08.02.2026;15.02.2026;Rudy Glazer;20 (B0);Quotation;Open
+#101377 GRUPO ADRIANA;Via Brasil;08.02.2026;15.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #101070 GRUPO ADRIANA;Via Brasil;08.02.2026;15.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #103516 Grupo Jarbas;Via Brasil;08.02.2026;15.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #100551 Grupo Nayara - Terra Santa;RENOVA AGENCIA DE VI...;08.02.2026;16.02.2026;Jonas Blatt;40 (B0);Quotation;Open
@@ -115,8 +115,8 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #103653 [M #99816] DAB - Daily Audio Bible Israel tour - FEB 2026 RED BUS-DAB - FEB 2026 PURPLE BUS;Yosher Tours (Sherry);10.02.2026;22.02.2026;Andrea Waisberg;150 (B0);Reservation;Open
 #103922 [M #99816] DAB - Daily Audio Bible Israel tour - FEB 2026 RED BUS-DAB - FEB 2026 VIP VAN;Yosher Tours (Sherry);10.02.2026;22.02.2026;Andrea Waisberg;150 (B0);Reservation;Open
 #98832 DCT Williams - Feb.2026;Discovery Cruises an... (victor);10.02.2026;18.02.2026;Ella Schleifer;23 (B23);Reservation;Open
-#102163 EW Alabama AG Nexus Pastors, Feb 9-19 2026 |;Eagle's Wings Minist...;10.02.2026;19.02.2026;Gil Feinstein;47 (B47);Reservation;Open
-#102238 EW Alabama AG Nexus Pastors, Feb 9-19 2026 Regular Guide Copy;Eagle's Wings Minist...;10.02.2026;19.02.2026;Mateo Aides;50 (B0);Quotation;Open
+#102163 EW Alabama AG Nexus Pastors, Feb 9-19 2026 |;Eagle's Wings Minist...;10.02.2026;19.02.2026;Gil Feinstein;46 (B46);Reservation;Open
+#102238 EW Alabama AG Nexus Pastors, Feb 9-19 2026 Regular Guide Copy;Eagle's Wings Minist...;10.02.2026;19.02.2026;Mateo Aides;50 (B0);Canceled;Open
 #101309 GOnGO Lunar Holiday series EY Feb 2026;GonGo (Joyce);10.02.2026;17.02.2026;Chin-Won Lee;0 (B0);Quotation;Open
 #101311 GOnGO Lunar Holiday TLV-AMM ET 9 Feb 2026;GonGo (Joyce);10.02.2026;18.02.2026;Chin-Won Lee;0 (B0);Canceled;Open
 #96891 NCC FSOJ T 0502226A;Omega Tours & Travel...;10.02.2026;19.02.2026;Virginia Syvan;45 (B0);Canceled;Open
@@ -127,10 +127,10 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #99217 Ap. Luiz Henrique;Rafas Tours;11.02.2026;19.02.2026;Jonas Blatt;200 (B0);Canceled;Open
 #99216 Ap. Luiz Henrique - 5 estrelas;Rafas Tours;11.02.2026;19.02.2026;Jonas Blatt;40 (B0);Quotation;Open
 #99218 Ap. Luiz Henrique - Turistica Superior;Rafas Tours;11.02.2026;19.02.2026;Jonas Blatt;40 (B0);Quotation;Open
-#102127 BUS#1;Pilgrim Tours (Molly);11.02.2026;19.02.2026;Carmen Avrouskine;100 (B0);Canceled;Open
 #102294 BUS#1;Pilgrim Tours (David Schaeffer);11.02.2026;20.02.2026;Carmen Avrouskine;80 (B0);Canceled;Open
-#102129 BUS#2;Pilgrim Tours (Molly);11.02.2026;19.02.2026;Carmen Avrouskine;100 (B0);Canceled;Open
+#102127 BUS#1;Pilgrim Tours (Molly);11.02.2026;19.02.2026;Carmen Avrouskine;100 (B0);Canceled;Open
 #102295 BUS#2;Pilgrim Tours (David Schaeffer);11.02.2026;20.02.2026;Carmen Avrouskine;80 (B0);Canceled;Open
+#102129 BUS#2;Pilgrim Tours (Molly);11.02.2026;19.02.2026;Carmen Avrouskine;100 (B0);Canceled;Open
 #101327 Centro Evangelico - Biblical tour;Centro Evangélico Vi... (Sinker);11.02.2026;20.02.2026;Andrea Waisberg;40 (B0);Quotation;Open
 #101326 CENTRO EVANGELICO VIDA NUEVA FEB 2026;Centro Evangélico Vi... (Sinker);11.02.2026;18.02.2026;Andrea Waisberg;60 (B0);Quotation;Open
 #99197 CNX - GRUPO ISRAEL E JORDANIA;AJS TRAVEL;11.02.2026;19.02.2026;Jonas Blatt;40 (B0);Canceled;Open
@@ -148,14 +148,14 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #101711 [M #101244] Huckabee tour - SECOND Feb. 2026 tour-Huckabee - FEB 26, 2nd tour - bus 8;Blue Diamond;11.02.2026;19.02.2026;Ella Schleifer;0 (B0);Canceled;Open
 #101244 [M] Huckabee tour - SECOND Feb. 2026 tour;Blue Diamond;11.02.2026;19.02.2026;Ella Schleifer;400 (B0);Canceled;Open
 #103335 ( IS ) MORIAH TURISMO;Moriah Viagens e Tur...;11.02.2026;17.02.2026;Jonas Blatt;10 (B10);Reservation;Open
-#64412 [M #99011] Bible Experience Tour South Feb26-Jordan extension Feb26;Behold Israel;11.02.2026;15.02.2026;Eli Shalom;23 (B23);Reservation;Open
+#64412 [M #99011] Bible Experience Tour South Feb26-Jordan extension Feb26;Behold Israel;11.02.2026;15.02.2026;Eli Shalom;19 (B19);Reservation;Open
 #98551 [M] Law Enforcement Fellowship Launch of the Gospel;Morning Star Tours;11.02.2026;17.02.2026;Tatiana Gourevich;37 (B37);Reservation;Open
 #100152 MORIAH TURISMO;Moriah Viagens e Tur...;11.02.2026;17.02.2026;Jonas Blatt;40 (B0);Canceled;Open
 #99965 New Life Bible Fellowship Church;Pilgrim Tours (Dan Bergey);11.02.2026;17.02.2026;Carmen Avrouskine;28 (B28);Reservation;Open
-#102624 (OK - IC - #)PASTOR KLEBSON SILVA;Guesher Viagens Turi...;11.02.2026;19.02.2026;Luana Luna;14 (B14);Reservation;Open
+#102624 (OK - IC - #)PASTOR KLEBSON SILVA;Guesher Viagens Turi...;11.02.2026;23.02.2026;Luana Luna;14 (B14);Reservation;Open
 #101563 (OK- RB - # )EGITO, ISRAEL & JORDANIA;Euroamerica Travels;11.02.2026;22.02.2026;Jonas Blatt;24 (B24);Reservation;Open
-#102543 PR ROGERIO DANTAS;Gileade Turismo e Vi...;11.02.2026;19.02.2026;Jonas Blatt;40 (B0);Quotation;Open
 #102462 PR ROGERIO DANTAS;Gileade Turismo e Vi...;11.02.2026;21.02.2026;Jonas Blatt;40 (B0);Quotation;Open
+#102543 PR ROGERIO DANTAS;Gileade Turismo e Vi...;11.02.2026;19.02.2026;Jonas Blatt;40 (B0);Quotation;Open
 #97877 Retail 11 Feb 26;Pilgrim Tours (Molly);11.02.2026;19.02.2026;Elina Valieva;26 (B26);Reservation;Open
 #97879 Retail 11 Feb 26 Slow Pace;Pilgrim Tours;11.02.2026;19.02.2026;Carmen Avrouskine;30 (B0);Canceled;Open
 #99620 SEGUINDO OS PASSOS DE JESUS;MORIAH INTERNATIONAL...;11.02.2026;18.02.2026;Jonas Blatt;0 (B0);Quotation;Open
@@ -175,6 +175,7 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #99836 TERRA SANTA - PADRE LUIS;Lobotur;12.02.2026;19.02.2026;Rudy Glazer;40 (B0);Quotation;Open
 #98328 Church of Eleven22 Tour 26 Copy;Spiritual Bible Jour...;13.02.2026;21.02.2026;Gil Feinstein;90 (B0);Canceled;Open
 #99898 Cornerstone Church;Adoption Airfare & H... (Tabitha);13.02.2026;24.02.2026;Andrea Waisberg;40 (B0);Canceled;Open
+#104409 Film trip;Inspiration Travel;13.02.2026;21.02.2026;Alex Hasson;4 (B4);Reservation;Open
 #101185 Gathering House Church;Philip's House LLC (Philip McCallum);13.02.2026;23.02.2026;Corina Erica Kerr;19 (B19);Reservation;Open
 #101302 GOnGO Lunar Holiday series TK Feb 2026;GonGo (Joyce);13.02.2026;19.02.2026;Chin-Won Lee;0 (B0);Quotation;Open
 #101243 Huckabee Feb 2026 bus 5 Copy;Blue Diamond;13.02.2026;21.02.2026;Ella Schleifer;0 (B0);Quotation;Open
@@ -185,12 +186,13 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #102723 Advantage Eco Trails Tour;Advantage Eco Trails...;14.02.2026;18.02.2026;Simon Dabit;12 (B0);Quotation;Open
 #103357 Apóstolo Rodrigo Salgado e Bispa Cristina;HEBROM VIAGENS E TUR...;14.02.2026;20.02.2026;Jonas Blatt;30 (B0);Quotation;Open
 #99145 CARAVANA EVANGÉLICA - ISRAEL - COM RENATA JACUK;EretzTur viagens e t...;14.02.2026;21.02.2026;Jonas Blatt;40 (B0);Quotation;Open
-#103913 Carnaval em Israel Us Travel;US Travel;14.02.2026;20.02.2026;Jonas Blatt;30 (B0);Reservation;Open
+#103913 Carnaval em Israel Us Travel;US Travel;14.02.2026;20.02.2026;Jonas Blatt;38 (B38);Reservation;Open
 #99621 CULTURA DE ISRAEL;MORIAH INTERNATIONAL...;14.02.2026;23.02.2026;Jonas Blatt;0 (B0);Quotation;Open
 #101891 EO021326K Joe Kearse;Educational Opportun...;14.02.2026;23.02.2026;Shireen Faidy;43 (B3);Reservation;Open
+#104429 Georg Family;Hand in Hand Tours;14.02.2026;21.02.2026;Virginia Syvan;4 (B0);Reservation;Open
 #99146 IGREJA BATISTA IBENESER;EretzTur viagens e t...;14.02.2026;21.02.2026;Jonas Blatt;40 (B0);Quotation;Open
 #103214 Israelreise 2026;Hand in Hand Tours;14.02.2026;21.02.2026;Virginia Syvan;9 (B14);Reservation;Open
-#100709 [M #100558] Justice Group Feb 26-Justice Group Eilat Ext;Moriah Tours and Tra...;14.02.2026;17.02.2026;Gil Feinstein;17 (B17);Reservation;Open
+#100709 [M #100558] Justice Group Feb 26-Justice Group Eilat Ext;Moriah Tours and Tra...;14.02.2026;17.02.2026;Gil Feinstein;15 (B15);Reservation;Open
 #102635 LY Holidays Jordan Israel 022026;LY HOLIDAYS (H.K.) L... (Anthony);14.02.2026;22.02.2026;Ibrahim Vidal;0 (B0);Canceled;Open
 #96739 NGEN 140226;New Genesis;14.02.2026;19.02.2026;Jonas Blatt;40 (B0);Quotation;Open
 #99837 Rivers Church;Pilgrim Tours (Dan Bergey);14.02.2026;23.02.2026;Elina Valieva;18 (B18);Reservation;Open
@@ -238,9 +240,9 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #96892 NCC FSOJ T 1602226A;Omega Tours & Travel...;17.02.2026;26.02.2026;Virginia Syvan;45 (B0);Quotation;Open
 #97137 NCC FSOJ T 160226A;Omega Tours & Travel...;17.02.2026;26.02.2026;Virginia Syvan;45 (B0);Canceled;Open
 #100501 ORÇAMENTO GRUPO ISRAEL ID 8026255;Orinter Viagens E Tu...;17.02.2026;25.02.2026;Luana Luna;40 (B0);Canceled;Open
-#103911 Caravana Egito e Israel 2026 (Jecer);US Travel;18.02.2026;23.02.2026;Jonas Blatt;38 (B38);Reservation;Open
+#103911 Caravana Egito e Israel 2026 (Jecer);US Travel;18.02.2026;23.02.2026;Jonas Blatt;40 (B40);Reservation;Open
 #101157 CCL Hong Kong CNY Holyland Tour Feb 2026;CCEnterprise Ltd (Lewis);18.02.2026;27.02.2026;Chin-Won Lee;0 (B0);Quotation;Open
-#104171 COSBELTUR;COSBEL VIAGENS E TUR...;18.02.2026;01.03.2026;Jonas Blatt;40 (B0);Quotation;Open
+#104171 COSBELTUR;COSBEL VIAGENS E TUR...;18.02.2026;01.03.2026;Jonas Blatt;40 (B0);Reservation;Open
 #97047 Faith Baptist Bible College and Theological Seminary;Pilgrim Tours (Jessica);18.02.2026;25.02.2026;Carmen Avrouskine;46 (B46);Reservation;Open
 #101481 GOnGO Lunar Holiday 215TK Feb 2026;GonGo (Joyce);18.02.2026;25.02.2026;Chin-Won Lee;0 (B0);Quotation;Open
 #101476 HETTY MASENGI 18-24 FEB 2026;PT Ahalan Global Agi...;18.02.2026;24.02.2026;Ibrahim Vidal;0 (B0);Quotation;Open
@@ -249,7 +251,7 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #101551 Schofar-26;Kreativ Reisen GmbH;18.02.2026;01.03.2026;Ester Heinzmann;30 (B0);Canceled;Open
 #100567 TEST Avishai TEST;Independent;18.02.2026;25.02.2026;Avishai Futerman;0 (B0);Quotation;Open
 #98279 Tillotson HL26 021426T;Educational Opportun...;18.02.2026;25.02.2026;Virginia Syvan;40 (B0);Canceled;Open
-#103366 021626P EO Christ Central Ministries;Educational Opportun...;19.02.2026;24.02.2026;Shireen Faidy;35 (B0);Reservation;Open
+#103366 021626P EO Christ Central Ministries;Educational Opportun...;19.02.2026;24.02.2026;Shireen Faidy;34 (B0);Reservation;Open
 #99761 Calvary Church (George and Trish Ray) Small group;Calvary Church (Trish Ray);19.02.2026;28.02.2026;David Katz;50 (B0);Canceled;Open
 #99595 Cornerstone Christian Church;Pilgrim Tours (Dan);19.02.2026;28.02.2026;Rinad Kulghasi;40 (B0);Quotation;Open
 #97463 [M] CX26IS;Inspiration Travel;19.02.2026;27.02.2026;Rana Hotari;150 (B0);Canceled;Open
@@ -263,8 +265,8 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #104238 021926E EO FAM Trip 219;Educational Opportun...;20.02.2026;26.02.2026;Shireen Faidy;7 (B0);Reservation;Open
 #103364 FAM Trrip group 219;Educational Opportun...;20.02.2026;25.02.2026;Shireen Faidy;0 (B0);Canceled;Open
 #100452 G2G Business Tour 2026;Generation2Generation (Joanna Hunter);20.02.2026;26.02.2026;Dan Herman;40 (B0);Canceled;Open
-#98368 Beit Tur;Beittur Viagens;21.02.2026;27.02.2026;Jonas Blatt;40 (B0);Quotation;Open
 #98356 Beit Tur;Beittur Viagens;21.02.2026;27.02.2026;Jonas Blatt;40 (B0);Quotation;Open
+#98368 Beit Tur;Beittur Viagens;21.02.2026;27.02.2026;Jonas Blatt;40 (B0);Quotation;Open
 #101742 CARAVANA EGITO E ISRAEL SDC VIAGENS;Guesher Viagens Turi...;21.02.2026;27.02.2026;Jonas Blatt;0 (B0);Quotation;Open
 #103515 CVC - 2025112904027 F170;CVC;21.02.2026;03.03.2026;Jonas Blatt;30 (B0);Quotation;Open
 #102896 Eli Shalom TEST;Behold Israel;21.02.2026;01.03.2026;Eli Shalom;48 (B0);Quotation;Open
@@ -283,7 +285,7 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #99027 Huckabee Feb 2026 bus 8;Blue Diamond;22.02.2026;02.03.2026;Ella Schleifer;0 (B0);Canceled;Open
 #98528 [M] Huckabee tour - Feb. 2026;Blue Diamond;22.02.2026;02.03.2026;Ella Schleifer;200 (B0);Reservation;Open
 #103890 [M #98528] Huckabee tour - Feb. 2026-Huckabee tour - Feb. 2026 Bus 1 GREEN;Blue Diamond;22.02.2026;02.03.2026;Ella Schleifer;42 (B45);Reservation;Open
-#98525 Lev HaOlam;Lev HaOlam Club LTD;22.02.2026;01.03.2026;Gulcun Moussa;18 (B18);Reservation;Open
+#98525 Lev HaOlam;Lev HaOlam Club LTD;22.02.2026;01.03.2026;Gulcun Moussa;20 (B20);Reservation;Open
 #100774 Pastor David;Independent;22.02.2026;03.03.2026;Simon Dabit;30 (B0);Quotation;Open
 #100134 Reach Church Kirkland;Philip's House LLC;22.02.2026;05.03.2026;Corina Erica Kerr;31 (B31);Reservation;Open
 #100601 DCT Cumbie;Discovery Cruises an... (Gary);23.02.2026;01.03.2026;Ella Schleifer;8 (B0);Quotation;Open
@@ -292,18 +294,18 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #104184 [M #98528] Huckabee tour - Feb. 2026-Leila Mooneyham & Bruce and Carol Jones day tour;Blue Diamond (Kelly);23.02.2026;23.02.2026;Ella Schleifer;4 (B0);Reservation;Open
 #99188 Lewis Exp Feb 26;Eagle's Wings Minist...;23.02.2026;01.03.2026;Gil Feinstein;50 (B0);Canceled;Open
 #99163 Lewis Israel Experience Feb 26;Eagle's Wings Minist...;23.02.2026;01.03.2026;Gil Feinstein;50 (B0);Quotation;Open
-#100296 NT-Kehilat Sar-Shalom ( Stan Farr );Noseworthy Travel Se... (Phil Young);23.02.2026;05.03.2026;Rodney Gilah;40 (B0);Reservation;Open
+#100296 NT-Kehilat Sar-Shalom ( Stan Farr );Noseworthy Travel Se... (Phil Young);23.02.2026;05.03.2026;Rodney Gilah;40 (B18);Reservation;Open
 #101943 Pastor Valverde;Pastor Efraim Valverde;23.02.2026;05.03.2026;Gulcun Moussa;59 (B59);Reservation;Open
 #101532 SPG Holy Land Feb2026;SPG Travel (Gigi);23.02.2026;06.03.2026;Ibrahim Vidal;0 (B0);Quotation;Open
 #65341 Voyager Jordan Ext.;Voyager Travel and T...;23.02.2026;26.02.2026;Eli Shalom;0 (B0);Quotation;Open
 #100065 Calvary Chapel Cedar City;Pilgrim Tours (Dan Bergey);24.02.2026;05.03.2026;Rinad Kulghasi;40 (B0);Canceled;Open
 #102061 Calvary Chapel Cedar City;Pilgrim Tours (Dan);24.02.2026;05.03.2026;Rinad Kulghasi;40 (B0);Quotation;Archived
-#99373 COTAÇÃO Caravana Pra. DANIELE;Gurion Tour - Canada;24.02.2026;05.03.2026;Rudy Glazer;40 (B0);Quotation;Open
 #99372 COTAÇÃO Caravana Pra. DANIELE;Gurion Tour - Canada;24.02.2026;04.03.2026;Rudy Glazer;40 (B0);Quotation;Open
+#99373 COTAÇÃO Caravana Pra. DANIELE;Gurion Tour - Canada;24.02.2026;05.03.2026;Rudy Glazer;40 (B0);Quotation;Open
 #99601 DCT Gist 2026;Discovery Cruises an... (Victor);24.02.2026;06.03.2026;Ella Schleifer;30 (B0);Canceled;Open
 #102826 EXCELLER TOUR;EXCELLER TOUR OPERAD...;24.02.2026;03.03.2026;Jonas Blatt;30 (B0);Quotation;Open
 #102613 FIRM Coference;FIRM (FELLOWSHIP OF ...;24.02.2026;27.02.2026;Avishai Futerman;200 (B0);Quotation;Open
-#102871 Go Mega Pastors FAM Tour;Nativity Pilgrimage (Hani Zorob);24.02.2026;03.03.2026;Carmen Avrouskine;14 (B14);Reservation;Open
+#102871 Go Mega Pastors FAM Tour;Nativity Pilgrimage (Hani Zorob);24.02.2026;03.03.2026;Simon Dabit;14 (B14);Reservation;Open
 #102616 GOnGO N.Gyeongsang Province Presbytery Feb 2026;GonGo (Joyce);24.02.2026;03.03.2026;Chin-Won Lee;0 (B0);Quotation;Open
 #97263 HL26 022326Q Alnajjar;Educational Opportun...;24.02.2026;04.03.2026;Nathalie Abu Ghannam;25 (B0);Canceled;Open
 #98463 Kneser HL26 022326K;Educational Opportun...;24.02.2026;04.03.2026;Virginia Syvan;50 (B0);Canceled;Open
@@ -328,7 +330,7 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #96168 [M #96089] DF26IS-DF26IS 5* DLX level - The Setai & King David;Inspiration Travel;25.02.2026;06.03.2026;Lina Alami;500 (B0);Canceled;Open
 #96166 [M #96089] DF26IS-DF26IS 5* level - Galei K & David Citadel;Inspiration Travel;25.02.2026;06.03.2026;Lina Alami;500 (B0);Canceled;Open
 #96167 [M #96089] DF26IS-DF26IS 5* Plus level - U Boutique & David Citadel;Inspiration Travel;25.02.2026;06.03.2026;Lina Alami;500 (B0);Canceled;Open
-#100843 Dr. Ed Hoard 2026;Jackson Presbyterian... (Dr. Ed Hoard);25.02.2026;04.03.2026;Shireen Faidy;17 (B17);Reservation;Open
+#100843 Dr. Ed Hoard & freinds 2026;Jackson Presbyterian... (Dr. Ed Hoard);25.02.2026;04.03.2026;Shireen Faidy;17 (B17);Reservation;Open
 #97941 [M] DTS 2026;Morning Star Tours;25.02.2026;08.03.2026;Tatiana Gourevich;58 (B58);Reservation;Open
 #99709 Faith Baptist Church;Pilgrim Tours (Dan);25.02.2026;05.03.2026;Rinad Kulghasi;40 (B0);Quotation;Open
 #101354 HigashiSumiyoshi Tour to Israel;Kyoko Tsairi;25.02.2026;02.03.2026;Ibrahim Vidal;0 (B0);Quotation;Open
@@ -352,8 +354,8 @@ File;Agent;Arrival;Departure;Operator;Pax;Tour Status;File Status
 #101256 [M #101150] LW26IS Feb 26-Waldorf, DH & Ritz-Carlton;Inspiration Travel;26.02.2026;06.03.2026;Gil Feinstein;150 (B0);Canceled;Open
 #101252 [M #101150] LW26IS Feb 26-Waldorf, DH & Royal Beach;Inspiration Travel;26.02.2026;06.03.2026;Gil Feinstein;150 (B0);Canceled;Open
 #99876 [M] Grace Bible;christian expedition;27.02.2026;09.03.2026;Rodney Gilah;50 (B0);Quotation;Open
+#101355 HigashiSumiyoshi Tour to Israel;Kyoko Tsairi;27.02.2026;04.03.2026;Simon Dabit;28 (B28);Reservation;Open
 #100143 HigashiSumiyoshi Tour to Israel;Kyoko Tsairi (Kyoko);27.02.2026;08.03.2026;Ibrahim Vidal;0 (B0);Quotation;Open
-#101355 HigashiSumiyoshi Tour to Israel;Kyoko Tsairi;27.02.2026;04.03.2026;Ibrahim Vidal;28 (B28);Reservation;Open
 #100701 Holy Land Pilgrimage;Independent (Wendemagegn Abiyu);27.02.2026;06.03.2026;Chin-Won Lee;0 (B0);Quotation;Open
 #101153 Travel Access Three in One Feb-Mar2026;Travel Access Tours ...;27.02.2026;11.03.2026;Ibrahim Vidal;0 (B0);Quotation;Open
 #101231 Travel Time 2026;Traveltime Tours;27.02.2026;04.03.2026;Ibrahim Vidal;0 (B0);Quotation;Open

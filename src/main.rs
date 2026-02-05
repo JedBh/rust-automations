@@ -1,11 +1,16 @@
 use chrono::{Datelike, Local, NaiveDate};
-use dotenvy::dotenv;
+use csv::ReaderBuilder;
+use dotenvy::{dotenv, from_path};
 use headless_chrome::Tab;
-
 use headless_chrome::protocol::cdp::Page;
-
 use headless_chrome::{Browser, LaunchOptionsBuilder};
+use regex::Regex;
+use reqwest::Client;
+use serde::Deserialize;
+use serde::Serialize;
+use std::collections::HashMap;
 use std::env;
+use std::fmt::format;
 use std::fs;
 use std::{
     collections::HashSet,
@@ -13,10 +18,150 @@ use std::{
     path::{Path, PathBuf},
     time::{Duration, Instant},
 };
+use strsim::jaro_winkler;
 
-fn main() -> Result<(), Box<dyn Error>> {
+#[derive(Deserialize, Debug)]
+struct Row {
+    id: i32,
+    created_at: String,
+    converted_lead_email: String,
+    account_name: String,
+}
+
+#[derive(Hash, Eq, PartialEq, Debug, Serialize)]
+struct ContactHookKey {
+    email: String,
+    file_number: String,
+}
+
+impl ContactHookKey {
+    fn new(email: &str, file_number: &str) -> Self {
+        Self {
+            email: email.trim().to_lowercase(),
+            file_number: file_number.to_string(),
+        }
+    }
+}
+
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn Error>> {
     dotenv().ok();
+    // Getting the supabase table records
+    let supabase_rows = supabase_table_read().await?;
 
+    // Reading the csv file records
+
+    let records: Vec<HashMap<String, String>> = read_csv("table.csv", &supabase_rows).await?;
+
+    let zoho_response = zoho_webhook(records, &supabase_rows).await?;
+
+    Ok(())
+}
+
+async fn zoho_webhook(
+    records: Vec<HashMap<String, String>>,
+    supabase_rows: &[Row],
+) -> Result<(), Box<dyn Error>> {
+    let client = Client::new();
+    let webhook_url = env::var("ZOHO_WEBHOOK").expect("ZOHO_WEBHOOK not set");
+    let mut files = Vec::new();
+    let mut seen_emails = HashSet::new();
+
+    for record in &records {
+        if let (Some(agent_val), Some(file_name)) = (record.get("Agent"), record.get("File")) {
+            let cleaned_agent = agent_val.trim().to_lowercase();
+
+            let best_match = supabase_rows.iter().find(|row| {
+                let stored_clean = row.account_name.trim().to_lowercase();
+                strsim::jaro_winkler(&cleaned_agent, &stored_clean) >= 0.9
+            });
+
+            if let Some(matched_row) = best_match
+                && !seen_emails.contains(&matched_row.converted_lead_email)
+            {
+                println!(
+                    "Unique Match Found: {} -> {} | file -> {}",
+                    matched_row.converted_lead_email, agent_val, file_name
+                );
+
+                if let Some(number) = extract_file_number(file_name) {
+                    println!("Extracted number: {}", number);
+
+                    let file_link = format!("https://sarel.mangotopsrv.com/file/{}", &number);
+
+                    let contact_hook =
+                        ContactHookKey::new(&matched_row.converted_lead_email, &file_link);
+
+                    let response = client
+                        .post(&webhook_url) // Add the & here to borrow it instead of moving it
+                        .json(&contact_hook)
+                        .send()
+                        .await?;
+
+                    println!("Contact Hook Created: {:?}", contact_hook);
+                } else {
+                    println!("Could not find a #number in the file string: {}", file_name);
+                }
+
+                seen_emails.insert(matched_row.converted_lead_email.clone());
+                files.push(matched_row);
+            }
+        }
+    }
+
+    println!("Total unique leads found: {:?}", files.len());
+
+    Ok(())
+}
+
+// only valid use of AI :)
+fn extract_file_number(text: &str) -> Option<String> {
+    // Regex breakdown:
+    // #      - looks for the pound sign
+    // (\d+)  - captures one or more digits into group 1
+    // \s?    - looks for a space (optional)
+    let re = Regex::new(r"#(\d+)\s?").unwrap();
+
+    re.captures(text)
+        .and_then(|cap| cap.get(1)) // Get the first capture group
+        .map(|m| m.as_str().to_string()) // Convert to String
+}
+
+async fn read_csv(
+    path: &str,
+    supabase_rows: &[Row],
+) -> Result<Vec<HashMap<String, String>>, Box<dyn Error>> {
+    let mut reader = ReaderBuilder::new()
+        .delimiter(b';')
+        .has_headers(true)
+        .from_path(path)?;
+
+    // results from csv file
+    let mut results = Vec::new();
+
+    for result in reader.deserialize() {
+        let record: HashMap<String, String> = result?;
+        if let Some(agent) = record.get("Agent") {
+            let cleaned_agent = agent.trim().to_lowercase();
+
+            // string lookup threshold
+            let threshold = 0.9;
+
+            let best_match = supabase_rows.iter().find(|row| {
+                let stored_clean = row.account_name.trim().to_lowercase();
+                jaro_winkler(&cleaned_agent, &stored_clean) >= threshold
+            });
+
+            if let Some(row) = best_match {
+                results.push(record);
+            }
+        }
+    }
+
+    Ok(results)
+}
+
+async fn top_table_download() -> Result<(), Box<dyn Error>> {
     let today: NaiveDate = Local::now().date_naive();
 
     let (first_day, last_day) = first_and_last_day_of_month(today);
@@ -165,4 +310,35 @@ fn first_and_last_day_of_month(today: NaiveDate) -> (NaiveDate, NaiveDate) {
     let last_day = first_of_next_month.pred_opt().unwrap();
 
     (first_day, last_day)
+}
+
+async fn supabase_table_read() -> Result<Vec<Row>, Box<dyn std::error::Error>> {
+    let sup_project_id = env::var("SUPABASE_URL").expect("SUPABASE_URL not set");
+
+    let supabase_url = format!("https://{}.supabase.co", sup_project_id);
+    let anon_key = env::var("SUPABASE_ANON_KEY").expect("SUPABASE_ANON_KEY not set");
+
+    let url = format!(
+        "{}/rest/v1/converted_leads?select=id,converted_lead_email,created_at,account_name&limit=5",
+        supabase_url
+    );
+
+    let res = Client::new()
+        .get(&url)
+        .header("apikey", &anon_key)
+        .header("Authorization", format!("Bearer {}", &anon_key))
+        .send()
+        .await?;
+
+    let status = res.status();
+    let body = res.text().await?;
+
+    // parseing if request succesful
+    if !status.is_success() {
+        return Err(format!("Request failed: {}", status).into());
+    }
+
+    let rows: Vec<Row> = serde_json::from_str(&body)?;
+
+    Ok(rows)
 }
