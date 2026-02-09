@@ -1,6 +1,7 @@
 use chrono::{Datelike, Local, NaiveDate};
 use csv::ReaderBuilder;
-use dotenvy::{dotenv, from_path};
+use delete::delete_file;
+use dotenvy::{dotenv /* from_path */};
 use headless_chrome::Tab;
 use headless_chrome::protocol::cdp::Page;
 use headless_chrome::{Browser, LaunchOptionsBuilder};
@@ -10,7 +11,7 @@ use serde::Deserialize;
 use serde::Serialize;
 use std::collections::HashMap;
 use std::env;
-use std::fmt::format;
+// use std::fmt::format;
 use std::fs;
 use std::{
     collections::HashSet,
@@ -22,8 +23,8 @@ use strsim::jaro_winkler;
 
 #[derive(Deserialize, Debug)]
 struct Row {
-    id: i32,
-    created_at: String,
+    // id: i32,
+    // created_at: String,
     converted_lead_email: String,
     account_name: String,
 }
@@ -46,6 +47,9 @@ impl ContactHookKey {
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     dotenv().ok();
+
+    top_table_download().await?;
+
     // Getting the supabase table records
     let supabase_rows = supabase_table_read().await?;
 
@@ -53,7 +57,9 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     let records: Vec<HashMap<String, String>> = read_csv("table.csv", &supabase_rows).await?;
 
-    let zoho_response = zoho_webhook(records, &supabase_rows).await?;
+    zoho_webhook(records, &supabase_rows).await?;
+
+    delete_file("table.csv").unwrap();
 
     Ok(())
 }
